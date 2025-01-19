@@ -1,3 +1,4 @@
+# 1. List: Create a list of numbers and find the sum
 numbers = input("Enter values for List separated by commas (e.g., 1,2): ")
 numbers_list = [int(num) for num in numbers.split(',')]
 sum_of_numbers = sum(numbers_list)
@@ -22,7 +23,7 @@ num_contacts = int(input("\nHow many contacts do you want to add? "))
 for _ in range(num_contacts):
     name = input("Enter name: ")
     email = input("Enter email: ")
-contact_info[name] = email
+    contact_info[name] = email
 
 # Display Results
 print("\n--- Results ---")
@@ -50,8 +51,8 @@ print("Union:", union)
 print("\nDictionary\n")
 print("Contact Information =",contact_info)  # Display the dictionary as is
 for name, email in contact_info.items():
-print("Key =", name)   # Print key
-print("Value =", email)  # Print value
+    print("Key =", name)   # Print key
+    print("Value =", email)  # Print value
 
 # Lookup for a specific name
 name_to_lookup = input("\nEnter a name to look up their email: ")
