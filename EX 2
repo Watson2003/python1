@@ -24,10 +24,10 @@ if operation in [1, 2, 3, 4, 6]:
 # Handle operations that require only one number
 elif operation in [5, 7, 8, 9, 10]:
     num1 = float(input("Enter the number: "))
-
+    
 else:
-print("\nInvalid operation! Please choose a valid option.")
-exit()
+    print("\nInvalid operation! Please choose a valid option.")
+    exit()
 
 # Perform the chosen operation using the math functions
 if operation == 1:  # Addition
